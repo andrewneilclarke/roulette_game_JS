@@ -18,6 +18,7 @@ lowerContainer[0].style.display = "none";
 let bet = 0;
 let cash = 0;
 let additional;
+let current = 0;
 let resultNum;
 
 const rollBall = () => {
@@ -54,7 +55,7 @@ resetButton.addEventListener("click", () => {
 
 // BET SUBMIT
 betSubmitButton.addEventListener("click", () => {
-    bank[0].innerText -= additional;
+    bank[0].innerText -= parseInt(betamount.innerText);
     if (betchoice.innerText != "none" && parseInt(betamount.innerText) > 0) {
         rollBall();
         printResult();
@@ -111,9 +112,11 @@ const incrementBank = () => {
 }
 
 const youLose = () => {
-    if (parseInt(bank[0].innerText) < 1) {console.log('YOU LOSER!!!!!')
-}
-}
+    if (parseInt(bank[0].innerText) < 1) 
+    {let playAgain = confirm(`YOU LOSE!!!! Play Again?`);
+    if (playAgain) {location.reload();};
+}}
+// 
 
 // switch(checkResult) {
 //     case betchoice == "Red" && checkWinColour() == "Red":
