@@ -58,9 +58,10 @@ betSubmitButton.addEventListener("click", () => {
     bank[0].innerText -= parseInt(betamount.innerText);
     if (betchoice.innerText != "none" && parseInt(betamount.innerText) > 0) {
         rollBall();
-        printResult();
+        setTimeout(printResult, 1000);
+        //printResult();
         checkResult();
-        incrementBank();
+        setTimeout(incrementBank, 2500);
         youLose();} 
     else { alert('Please select a bet and a stake amount')};
 })

@@ -28,8 +28,10 @@ body {
 }
 
 .flex-box-container-1 {
-  display: flex;
-  padding: 20px;
+  display: inline-flex;
+  padding: none;
+  align-items: center;
+  
 }
 
 .win-status {
@@ -51,7 +53,7 @@ body {
   align-items: center;
   justify-content: center;
 }
-.bet-choice-buttons{
+.bet-buttons{
   height: 15px;
   width: 40px;
   display: contents;
