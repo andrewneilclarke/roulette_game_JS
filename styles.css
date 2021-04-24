@@ -1,0 +1,90 @@
+* *::before, *::after  {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: normal; 
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+body {
+  padding: 0;
+  margin: 0;
+  
+  min-height: 100%;
+}
+
+.roulette-container{
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  min-height: 100vh;
+  background: linear-gradient(70deg, #2e9155, #35654d);
+  
+}
+.main-pic {
+  align-items: justify;
+  height: 350px;
+}
+
+.flex-box-container-1 {
+  display: flex;
+  padding: 20px;
+}
+
+.win-status {
+  padding-left: 10px;
+}
+.h4 {
+  font: bold;
+  display: inline;
+}
+.title {
+  text-align: center;
+}
+.bank-info-element{
+  margin: 5px;
+}
+.bank-info {
+  display:inline-flex;
+  margin: none;
+  align-items: center;
+  justify-content: center;
+}
+.bet-choice-buttons{
+  height: 15px;
+  width: 40px;
+  display: contents;
+  margin: 5px;
+  border: thick white;
+}
+
+.btn {
+  margin-bottom: 20px;
+  padding: 8px;
+  border: 2px solid white;
+  border-radius: 1px;
+  font-family: 'Helvetica Neue', arial;
+  font-weight:bold;
+  color: white;
+  letter-spacing: 1px;
+  display: block;
+    margin: 5px;
+}
+
+.btn:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  
+}
+
+.button-green {
+  background-color: green;
+}
+.button-black {
+  background-color: black;
+  color: white;
+}
+.button-red {
+  background-color: red;
+}
