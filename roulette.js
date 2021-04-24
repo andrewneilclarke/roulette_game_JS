@@ -62,7 +62,7 @@ betSubmitButton.addEventListener("click", () => {
         //printResult();
         checkResult();
         setTimeout(incrementBank, 2500);
-        youLose();} 
+        setTimeout(youLose, 3501)} 
     else { alert('Please select a bet and a stake amount')};
 })
 
